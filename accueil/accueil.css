@@ -1,0 +1,41 @@
+* {
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+p {
+    padding: 5px;
+    position: relative;
+    font-size: 1.5rem;
+    top: 50px;
+    color: transparent;
+    -webkit-text-stroke: 0.5px black;
+    background: linear-gradient(90deg, rgb(0, 0, 255), rgb(0, 100, 255), rgb(0, 200, 255));
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: animate 3s infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+
+@keyframes animate {
+    0% {
+        background-position: -500%;
+    }
+
+    100% {
+        background-position: 500%;
+    }
+}
+
+img {
+    position: relative;
+    top: 50px;
+    border-radius: 50px;
+    max-width: 70%;
+    height: 60%;
+}
